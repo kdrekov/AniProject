@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image with Social Media Icons and Background Music</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            background-image: url('grafik.png');
+            background-size: contain; /* Показва цялото изображение */
+            background-position: center; /* Центрира изображението */
+            background-repeat: no-repeat; /* Премахва повторението на изображението */
+        }
+        .social-icons {
+            position: absolute;
+            bottom: 40px; /* Distance from the bottom of the image */
+            right: 500px; /* Distance from the right of the image */
+	    display: flex; /* Позволява иконите да се подреждат на един ред */
+        }
+        .social-icons a {
+           margin-left: 10px;
+        }
+        .social-icons img {
+            width: 40px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="social-icons">
+    <a href="https://www.facebook.com/groups/148573925972706/" target="_blank">
+            <img src="Facebook_Logo_2023.png" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/danzadepasion/" target="_blank">
+            <img src="Instagram_icon.png" alt="Instagram">
+        </a>
+</div>
+
+<div class="audio-player">
+    <audio autoplay loop>
+        <source src="Brindo Con Agua - Aventura.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</div>
+
+</body>
+</html>
